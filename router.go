@@ -23,7 +23,7 @@ func router() {
 	router.GET("/message", func(ctx *gin.Context) {
 		fmt.Println("triggered end point '/health'")
 		ctx.JSON(http.StatusOK, gin.H{
-			"message" : "your application is deployed successfully",
+			"message" : "your application is deployed successfully to kubernetes",
 			"code" : code,
 		})
 	})
